@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { useForm, SubmitHandler, FieldValues, Form } from "react-hook-form";
+import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
 
 interface IFormInputs {
   username: string;
@@ -21,6 +21,7 @@ export default function LoginForm() {
       console.log(data);
       router.push("pages/home");
     } catch (error) {
+      alert("Error al enviar el formulario " + error);
     } finally {
       setIsLoading(false);
     }
