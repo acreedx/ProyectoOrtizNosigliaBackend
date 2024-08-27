@@ -1,13 +1,22 @@
+import Image from "next/image";
+import "../assets/css/footer.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.css";
 export default function Footer() {
   return (
-    <footer className="footer pt-100 img-bg">
+    <footer className="footer pt-100 img-bg h-full">
       <div className="container">
         <div className="footer-widget-wrapper">
           <div className="row">
             <div className="col-xl-4 col-lg-5 col-md-6">
               <div className="footer-widget mb-30">
                 <a href="index.html" className="logo">
-                  <img src="assets/img/logo/logo.png" alt="" />
+                  <Image
+                    src="/images/logo/logo.png"
+                    alt=""
+                    width={110}
+                    height={110}
+                  />
                 </a>
                 <p>
                   Lorem ipsum dolor serit amet, consetetur sadipscing elitr, sed
@@ -40,22 +49,34 @@ export default function Footer() {
                 <h4>Quick Link</h4>
                 <ul className="footer-links">
                   <li>
-                    <a href="#">Home</a>
+                    <a className="no-underline" href="#">
+                      Home
+                    </a>
                   </li>
                   <li>
-                    <a href="#">About</a>
+                    <a className="no-underline" href="#">
+                      About
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <a className="no-underline" href="#">
+                      Services
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Doctor</a>
+                    <a className="no-underline" href="#">
+                      Doctor
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Blog</a>
+                    <a className="no-underline" href="#">
+                      Blog
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <a className="no-underline" href="#">
+                      Contact
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -65,22 +86,34 @@ export default function Footer() {
                 <h4>Quick Link</h4>
                 <ul className="footer-links">
                   <li>
-                    <a href="#">Cardiology</a>
+                    <a className="no-underline" href="#">
+                      Cardiology
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Neurology</a>
+                    <a className="no-underline" href="#">
+                      Neurology
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Gastroenterology</a>
+                    <a className="no-underline" href="#">
+                      Gastroenterology
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Routine Checkup</a>
+                    <a className="no-underline" href="#">
+                      Routine Checkup
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Orthopedics</a>
+                    <a className="no-underline" href="#">
+                      Orthopedics
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Dental Surgery</a>
+                    <a className="no-underline" href="#">
+                      Dental Surgery
+                    </a>
                   </li>
                 </ul>
               </div>

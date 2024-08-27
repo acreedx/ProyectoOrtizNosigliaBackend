@@ -1,120 +1,60 @@
+import Image from "next/image";
 import React from "react";
+import NavBar from "./NavBar";
+import OldNavBar from "./OldNavBar";
 export default function Header() {
   return (
-    <header id="home" className="header">
-      <div className="header-wrapper">
-        <div className="header-top theme-bg">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-8">
-                <div className="header-top-left text-center text-md-left">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="lni lni-phone"></i> +12345678
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="lni lni-envelope"></i>{" "}
-                        OrtizNosiglia@gmail.com
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="header-top-right d-none d-md-block">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="lni lni-facebook-filled"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="lni lni-twitter-filled"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="lni lni-instagram-original"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* NAVBAR INICIO*/}
-        <div className="navbar-area">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <nav className="navbar navbar-expand-lg">
-                  <a className="navbar-brand" href="index.html">
-                    <img src="assets/img/logo/logo.png" alt="Logo" />
-                  </a>
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span className="toggler-icon"></span>
-                    <span className="toggler-icon"></span>
-                    <span className="toggler-icon"></span>
-                  </button>
-
-                  <div
-                    className="collapse navbar-collapse sub-menu-bar"
-                    id="navbarSupportedContent"
-                  >
-                    <ul id="nav" className="navbar-nav ml-auto">
-                      <li className="nav-item active">
-                        <a className="page-scroll active" href="#home">
-                          Home
+    <>
+      <header id="home">
+        <div className="header-wrapper">
+          <div className="header-top theme-bg">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-8">
+                  <div className="header-top-left text-center text-md-left">
+                    <ul className="mb-0">
+                      <li>
+                        <a href="#" className="no-underline">
+                          <i className="lni lni-phone"></i> +12345678
                         </a>
                       </li>
-                      <li className="nav-item">
-                        <a className="page-scroll" href="#about">
-                          About
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="page-scroll" href="#services">
-                          Service
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="page-scroll" href="#team">
-                          Doctor
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="page-scroll" href="#blog">
-                          Blog
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="page-scroll" href="#contact">
-                          Contact
+                      <li>
+                        <a href="#" className="no-underline">
+                          <i className="lni lni-envelope"></i>{" "}
+                          OrtizNosiglia@gmail.com
                         </a>
                       </li>
                     </ul>
                   </div>
-                </nav>
+                </div>
+                <div className="col-md-4">
+                  <div className="header-top-right d-none d-md-block">
+                    <ul className="mb-0">
+                      <li>
+                        <a href="#" className="">
+                          <i className="lni lni-facebook-filled"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="lni lni-twitter-filled"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="lni lni-instagram-original"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        {/* NAVBAR FIN*/}
-      </div>
+      </header>
 
+      <NavBar />
       <div className="slider-wrapper">
         <section className="slider-section">
           <div className="slider-active slick-style">
@@ -229,6 +169,6 @@ export default function Header() {
           </div>
         </section>
       </div>
-    </header>
+    </>
   );
 }
