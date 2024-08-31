@@ -1,9 +1,16 @@
+import Image from "next/image";
+
 export default function Main() {
   return (
     <main>
       <section className="we-do-section pt-150">
         <div className="shape shape-1">
-          <img src="assets/img/shapes/shape-1.svg" alt="" />
+          <Image
+            src="/images/shapes/shape-1.svg"
+            alt=""
+            width={400}
+            height={400}
+          />
         </div>
         <div className="container">
           <div className="row">
@@ -26,7 +33,12 @@ export default function Main() {
           <div className="row">
             <div className="col-xl-12">
               <div className="graph mb-60">
-                <img src="assets/img/we-do/graph-img.svg" alt="" />
+                <Image
+                  src="/images/we-do/graph-img.svg"
+                  alt=""
+                  width={1000}
+                  height={1000}
+                />
               </div>
             </div>
             <div className="col-lg-3">
@@ -231,7 +243,12 @@ export default function Main() {
       </section>
       <section id="about" className="about-section pt-120">
         <div className="shape shape-2">
-          <img src="assets/img/shapes/shape-2.svg" alt="" />
+          <Image
+            src="/images/shapes/shape-2.svg"
+            alt=""
+            width={400}
+            height={400}
+          />
         </div>
         <div className="container">
           <div className="row">
@@ -266,12 +283,22 @@ export default function Main() {
           </div>
         </div>
         <div className="about-img text-center">
-          <img src="assets/img/about/about-img.png" alt="" />
+          <Image
+            src="/images/about/about-img.png"
+            alt=""
+            width={400}
+            height={400}
+          />
         </div>
       </section>
       <section id="services" className="service-section pt-150">
         <div className="shape shape-3">
-          <img src="assets/img/shapes/shape-3.svg" alt="" />
+          <Image
+            src="/images/shapes/shape-3.svg"
+            alt=""
+            width={400}
+            height={400}
+          />
         </div>
         <div className="container">
           <div className="row">
@@ -592,10 +619,20 @@ export default function Main() {
       </section>
       <section id="testimonial" className="team-section pt-150 pb-150">
         <div className="shape shape-5">
-          <img src="assets/img/shapes/shape-2.svg" alt="" />
+          <Image
+            src="/images/shapes/shape-2.svg"
+            alt=""
+            width={400}
+            height={400}
+          />
         </div>
         <div className="shape shape-6">
-          <img src="assets/img/shapes/shape-5.svg" alt="" />
+          <Image
+            src="/images/shapes/shape-5.svg"
+            alt=""
+            width={400}
+            height={400}
+          />
         </div>
         <div className="container">
           <div className="row">
@@ -627,7 +664,12 @@ export default function Main() {
       <section className="faq-section theme-bg">
         <div className="faq-video-wrapper">
           <div className="faq-video">
-            <img src="assets/img/faq/faq-img.jpg" alt="" />
+            <Image
+              src="/images/faq/faq-img.jpg"
+              alt=""
+              width={400}
+              height={400}
+            />
             <div className="video-btn">
               <a className="popup-video glightbox" href="#">
                 <i className="lni lni-play"></i>
@@ -636,9 +678,11 @@ export default function Main() {
           </div>
         </div>
         <div className="shape">
-          <img
-            src="assets/img/shapes/shape-8.svg"
+          <Image
+            src="/images/shapes/shape-8.svg"
             alt=""
+            width={400}
+            height={400}
             className="shape-faq"
           />
         </div>
@@ -795,10 +839,20 @@ export default function Main() {
       </section>
       <section id="team" className="team-section pt-150 pb-150">
         <div className="shape shape-5">
-          <img src="assets/img/shapes/shape-2.svg" alt="" />
+          <Image
+            src="/images/shapes/shape-2.svg"
+            alt=""
+            width={400}
+            height={400}
+          />
         </div>
         <div className="shape shape-6">
-          <img src="assets/img/shapes/shape-5.svg" alt="" />
+          <Image
+            src="/images/shapes/shape-5.svg"
+            alt=""
+            width={400}
+            height={400}
+          />
         </div>
         <div className="container">
           <div className="row">
@@ -828,7 +882,10 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <section className="subscribe-section pt-100 pb-100 img-bg">
+      <section
+        id="emergency-section"
+        className="subscribe-section pt-100 pb-100 img-bg"
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-7">
@@ -928,7 +985,12 @@ export default function Main() {
       </section>
       <section id="blog" className="blog-section pt-150">
         <div className="shape shape-7">
-          <img src="assets/img/shapes/shape-6.svg" alt="" />
+          <Image
+            src="/images/shapes/shape-6.svg"
+            alt=""
+            width={400}
+            height={400}
+          />
         </div>
         <div className="container">
           <div className="row">
@@ -956,18 +1018,25 @@ export default function Main() {
               >
                 <div className="blog-img">
                   <a href="#">
-                    <img src="assets/img/blog/blog-1.png" alt="" />
+                    <Image
+                      src="/images/blog/blog-1.png"
+                      alt=""
+                      width={400}
+                      height={400}
+                    />
                   </a>
                 </div>
                 <div className="blog-content">
                   <h4>
-                    <a href="#">250+ Medical Tips We Just Had to Share</a>
+                    <a href="#" className="no-underline">
+                      250+ Medical Tips We Just Had to Share
+                    </a>
                   </h4>
                   <p>
                     Lorem ipsum dolor sirtewt amertse consetetur sadipscing
                     elitr, sedqw dinoumy eirmod tempor invidunt sedrsu.
                   </p>
-                  <a className="read-more" href="#">
+                  <a className="read-more no-underline" href="#">
                     Read More <i className="lni lni-arrow-right"></i>
                   </a>
                 </div>
@@ -980,18 +1049,25 @@ export default function Main() {
               >
                 <div className="blog-img">
                   <a href="#">
-                    <img src="assets/img/blog/blog-2.png" alt="" />
+                    <Image
+                      src="/images/blog/blog-2.png"
+                      alt=""
+                      width={400}
+                      height={400}
+                    />
                   </a>
                 </div>
                 <div className="blog-content">
                   <h4>
-                    <a href="#">100+ Medical Tips We Just Had to Share</a>
+                    <a href="#" className="no-underline">
+                      100+ Medical Tips We Just Had to Share
+                    </a>
                   </h4>
                   <p>
                     Lorem ipsum dolor sirtewt amertse consetetur sadipscing
                     elitr, sedqw dinoumy eirmod tempor invidunt sedrsu.
                   </p>
-                  <a className="read-more" href="#">
+                  <a className="read-more no-underline" href="#">
                     Read More <i className="lni lni-arrow-right"></i>
                   </a>
                 </div>
@@ -1004,18 +1080,25 @@ export default function Main() {
               >
                 <div className="blog-img">
                   <a href="#">
-                    <img src="assets/img/blog/blog-3.png" alt="" />
+                    <Image
+                      src="/images/blog/blog-3.png"
+                      alt=""
+                      width={400}
+                      height={400}
+                    />
                   </a>
                 </div>
                 <div className="blog-content">
                   <h4>
-                    <a href="#">250+ Medical Tips We Just Had to Share</a>
+                    <a href="#" className="no-underline">
+                      250+ Medical Tips We Just Had to Share
+                    </a>
                   </h4>
                   <p>
                     Lorem ipsum dolor sirtewt amertse consetetur sadipscing
                     elitr, sedqw dinoumy eirmod tempor invidunt sedrsu.
                   </p>
-                  <a className="read-more" href="#">
+                  <a className="read-more no-underline" href="#">
                     Read More <i className="lni lni-arrow-right"></i>
                   </a>
                 </div>
@@ -1026,10 +1109,20 @@ export default function Main() {
       </section>
       <section id="contact" className="team-section pt-150 pb-150">
         <div className="shape shape-5">
-          <img src="assets/img/shapes/shape-2.svg" alt="" />
+          <Image
+            src="/images/shapes/shape-2.svg"
+            alt=""
+            width={400}
+            height={400}
+          />
         </div>
         <div className="shape shape-6">
-          <img src="assets/img/shapes/shape-5.svg" alt="" />
+          <Image
+            src="/images/shapes/shape-5.svg"
+            alt=""
+            width={400}
+            height={400}
+          />
         </div>
         <div className="container">
           <div className="row">
