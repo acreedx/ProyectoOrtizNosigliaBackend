@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.css";
-import AddBootstrap from "./assets/js/AddBootstrap";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +21,7 @@ export default function RootLayout({
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <body className={inter.className}>
-        <AddBootstrap />
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
